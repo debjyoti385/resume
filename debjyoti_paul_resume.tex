@@ -90,6 +90,9 @@
 
 %% This gives us fun enumeration environments. compactitem will be nice.
 \usepackage{paralist}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+
 
 %% Reference the last page in the page number
 %
@@ -212,36 +215,36 @@
 % ALSO: \rcollength is the width of the right column of the table
 %       (adjust it to your liking; default is 1.85in).
 %
-\newlength{\rcollength}\setlength{\rcollength}{2.5in}%
+\newlength{\rcollength}\setlength{\rcollength}{3in}%
 %
 
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-130 S 800 E APT 101  &  +1 385 313-7219  \\
- Salt Lake City   &  \href{mailto:deb@cs.utah.edu}{deb@cs.utah.edu}\\
- Pin: 84102  &  \href{mailto:debjyoti.paul@utah.edu}{debjyoti.paul@utah.edu} \\ 
-        University of Utah & \href{https://github.com/debjyoti385}{\url{http://github.com/debjyoti385}} \\ 
-        USA     & \href{http://www.cs.utah.edu/~deb}{\url{http://www.cs.utah.edu/\~deb}}\\
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength }p{\rcollength}}
+130 S 800 E APT 101  & \faHome ~ \href{http://www.cs.utah.edu/~deb}{\url{http://www.cs.utah.edu/\~deb}}  \\
+ Salt Lake City   & \faEnvelope ~ \href{mailto:deb@cs.utah.edu}{deb@cs.utah.edu}\\
+ Pin: 84102  &  \faLinkedin ~ \href{https://www.linkedin.com/in/debjyotipaul385/}{https://www.linkedin.com/in/debjyotipaul385/} \\ 
+        University of Utah & \faGithub ~ \href{https://github.com/debjyoti385}{\url{http://github.com/debjyoti385}} \\ 
+        USA     &  \faPhone ~ +1 385 313-7219 \\
 \end{tabular}
 
 
-\section{Research Interests}
+\section{ Research Interests}
 %
 Large Scale Social Media Data Analytics, Machine Learning and Data Mining techniques, Deep Learning, Bayesian Learning, Text Analytics,  Indexing techniques, Data Visualization. 
 %
 
-\section{Education}
+\section{ Education}
 %
 \href{http://www.cs.utah.edu/}{\textbf{University of Utah, School of Computing}},
 Salt Lake City, UT, USA
+\vspace{-2mm}
 \begin{outerlist}
-
 \item[] PhD. Student,
         \href{http://cs.utah.edu/}
              {Computer Science \& Engineering},
         Fall 2015- \textit{Current}
         \begin{innerlist}
 %        \item[] Thesis Title: \emph{Multi-constraint Job scheduling problem in Grid}
-        \item[] Current Research Advisor:
+        \item[] Research Advisor:
               \href{http://www.cs.utah.edu/~feifei/}
                    {Professor Feifei Li}
 %        \item[] Research: Efficient scheduling strategy of Jobs on Grid to achieve maximum utilization of resources with energy efficient solution and maintaining hard and soft constraints along with SLAs.
@@ -249,12 +252,12 @@ Salt Lake City, UT, USA
 \\       
         \end{innerlist}
 \end{outerlist} 
-
+\vspace{-3mm}
 
 \href{http://www.iitk.ac.in/}{\textbf{Indian Institute of Technology Kanpur}},
 Kanpur, UP, INDIA
 \begin{outerlist}
-
+\vspace{-2mm}
 \item[] M.Tech.,
         \href{http://cse.iitk.ac.in/}
              {Computer Science \& Engineering},
@@ -279,27 +282,38 @@ Salt Lake, Kolkata, WB, INDIA
         \item[] College: \href{http://www.iemcal.com/}{\emph{Institute of Enginering and Management}}
         \item[] CGPA: 8.93/10 (\emph{Rank:} $< 10$)
              \end{innerlist}
-
 \end{outerlist}
 
 \section{Work Experience}
+\textbf{Amazon AI Research}, May 2017 - Aug 2017, New York, United States
+\vspace{-2mm}
+\begin{outerlist}
+\item[] Research Scientist Summer 2017 Intern
+\begin{innerlist}
+\item Advisors: Baris Coskun, Edo Liberty
+\item Mentors: Ramesh Nallapati, Zohar Karnin 
+\item Hyperparameter optimization with MxNet.
+\end{innerlist}
+\end{outerlist}
+
+\vspace{1mm}
 \href{http://www.flipkart.com/}{\textbf{Flipkart}}, July 2013 - May 2015, Bangalore, INDIA
+\vspace{-2mm}
 \begin{outerlist}
 \item[] Software Developer in Data Platform ( Exceeds Expectations for performance in Jan-July 2014)
 \begin{innerlist}
-\item Data Platform is data bank of \href{http://www.flipkart.com}{\emph{flipkart.com}}, India's biggest e-commerce company
-\item Experience in building Data Processing Platform (Ingestion-Processing-Visualization) and data warehousing. 
-\item Practied Big data analytics in scalable environment, processing pipeline for batch and stream. Database administrator of HP Vertica.
+\item Data Platform is data bank of \href{http://www.flipkart.com}{\emph{flipkart.com}}, India's biggest e-commerce company.
+\item Created environment for Big data analytics in scalable environment, processing pipeline for batch and stream.
 \end{innerlist}
 \end{outerlist}
 
 \section{Theses}
-M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanjeev Kumar Aggarwal}
+[2013] M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanjeev Kumar Aggarwal}
+\vspace{-2mm}
 \begin{outerlist}
 \item[] \textbf{Multi-constraint Job scheduling problem in Grid} 
 \begin{innerlist}
-    \item The objective is to efficiently schedule Jobs on Grid to achieve maximum utilization of resources with energy efficient approach. Modelling real world computing \& storage grid on Multi-objective Evolutionary Algorithm satisfying hard constraints on jobs constraints, resources constraints, and soft constraints on cost, and energy consumption on NSGA-II.
-\item Finding near Optimal Scheduling Solution: Local optimization using Pareto optimal front, global optimization by applying mutation on population on search space. Introduced job grouping technique with constraints to accumulate fine grained jobs which keeps processing time as low as possible.
+    \item The objective is to efficiently schedule Jobs on Grid to achieve maximum utilization of resources with energy efficient approach. Modeling real world computing \& storage grid on Multi-objective Evolutionary Algorithm satisfying hard constraints on jobs constraints, resources constraints, and soft constraints on cost, and energy consumption on NSGA-II. Local optimization using Pareto optimal front, global optimization by applying mutation on population on search space. Also introduced job grouping technique with constraints to accumulate fine grained jobs which keeps processing time as low as possible.
 \end{innerlist}
 \end{outerlist}
 
@@ -314,11 +328,14 @@ M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanj
 \section{Publications} 
 \\
 \begin{bibsection}
-\item \textbf{Debjyoti Paul}, Sanjeev K. Aggarwal, Multi-objective Evolution based Dynamic Job Scheduler in Grid, \emph{The 8th International Conference on Complex, Intelligent, and Software Intensive Systems (CISIS 2014)}, IEEE, July 2nd - 4th, 2014, Birmingham, UK.
-    
-\item  Manash Pal, Arnab Bhattacharya, \textbf{Debjyoti Paul}, RCached-tree: An Index Structure for Efficiently Answering Popular Queries, \emph{ACM International Conference on Information and Knowledge Management (CIKM 2013)}, Oct. 27 - Nov. 1, 2013, San Francisco, CA, USA. 
+\item Geotagged US Tweets as Predictors of County-Level Health Outcomes, 2015–2016, Quynh C. Nguyen, Matt McCullough, Hsien-wen Meng, \textbf{Debjyoti Paul}, Dapeng Li,  \emph{American Journal of Public Health, September, 2017}, \textit{DOI:} \href{https://dx.doi.org/10.2105/AJPH.2017.303993}{10.2105/AJPH.2017.303993}.
 
-\item \textbf{Debjyoti Paul}, Sumana Basu, Punit Beriwal, IEEE Paper titled “Multilevel Security Protocol using Radio Frequency Identification (RFID)”, \emph{International Conference on Emerging Trends in Mathematics and Computer Applications–2010}, \emph{pg-}544-547, 2010, Sivakasi, TN, INDIA.   
+\item Compass: Spatio Temporal Sentiment Analysis of US Election, \textbf{Debjyoti Paul}, Feifei Li, Murali Krishna Teja, Yu Xin, Richie Frost,  \textit{What twitter says!}, \emph{23rd SIGKDD Conference on Knowledge Discovery and Data Mining (SIGKDD 2017)}, Aug 13-17, 2017, Halifax, Canada. \textit{DOI:} \href{https://dx.doi.org/10.1145/3097983.3098053}{10.1145/3097983.3098053}. 
+
+\item Social media indicators of the food environment and state health outcomes, Quynh C. Nguyen, Hsien-wen Meng, Dapeng. Li, Matt McCullough, \textbf{Debjyoti Paul}, Kanokvimankul. P, Nguyen. T, Li. Feifei, \emph{ American Public Health Association, 148, 120-128.}, 2017, \textit{DOI:} \href{https://dx.doi.org/10.1016/j.puhe.2017.03.013}{10.1016/j.puhe.2017.03.013}.
+
+\item \textbf{Debjyoti Paul}, Sanjeev K. Aggarwal, Multi-objective Evolution based Dynamic Job Scheduler in Grid, \emph{The 8th International Conference on Complex, Intelligent, and Software Intensive Systems (CISIS 2014)}, IEEE, July 2nd - 4th, 2014, Birmingham, UK. \textit{DOI:} \href{https://dx.doi.org/10.1109/CISIS.2014.50}{10.1109/CISIS.2014.50}.    
+\item  Manash Pal, Arnab Bhattacharya, \textbf{Debjyoti Paul}, RCached-tree: An Index Structure for Efficiently Answering Popular Queries, \emph{ACM International Conference on Information and Knowledge Management (CIKM 2013)}, Oct. 27 - Nov. 1, 2013, San Francisco, CA, USA. \textit{DOI:}  \href{https://dx.doi.org/10.1145/2505515.2507817}{10.1145/2505515.2507817}. 
 
 \item \textbf{Debjyoti Paul}, Sumana Basu, Punit Beriwal, IEEE, \emph{Lightweight Security Enhancement Protocol for Radio Frequency
     Identification (RFID)” in SPSITM International Conference}, 2011, Kolkata, WB, INDIA       
@@ -346,26 +363,26 @@ M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanj
 %\item[\textbf{[2010]}] Microsoft certification on Database Fundamentals. 
 %\end{innerlist}
 
-
-\section{Projects \href{https://www.cs.utah.edu/~deb/research.php}{(for more..)}}
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength-180pt}p{\rcollength+180pt}}
-        \href{http://estorm.org}{Compass: \hskip 2cm Generic Spatio-temporal Sentiment Analysis Framework \hskip 2cm (US Election 2016)} \hskip 1cm -\href{http://estorm.org}{\textit{http://estorm.org}} & \hspace{0.5cm} This project explores how Twitter can be used to analyze the popularity of Political Parties for the Presidential Election 2016. It is purely based on the data collected from Twitter. We provide unbiased analysis of popularity based on the sentiment analysis for each party (Republican and Democratic) at basic geospatial unit area which is `county' (not Electoral Vote region) is our case. We also present time-range analysis of the data. Also a Bursty Event Detection System is used to detect when surge of tweets happened. Our Bursty Event detection correctly identified the tweet bursts and associated with the event happened at that time. \\[0.1cm] 
-         Event Aggregator & \hspace{0.5cm}  This project finds events from news articles, categorize them and gathers all articles talking about same event to a set. Each set of articles is referredas Event Entity. Information extraction process is applied to extract more information related to it. The code can process large scale data. The code will be made public after the paper is published.  \\[0.1cm] 
+\vspace{2mm}
+\section{Projects \href{https://www.cs.utah.edu/~deb/\#projects}{(More.. )}}
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-150pt}p{\rcollength+150pt}}
+        \href{http://estorm.org}{Compass } -\href{http://estorm.org}{\textit{http://estorm.org}} & \hspace{0.5cm} This project explores how Twitter can be used to analyze the popularity of Political Parties for the Presidential Election 2016. It is purely based on the data collected from Twitter.  Read our Compass paper for details.\\[0.1cm] 
+         Event Aggregator & \hspace{0.5cm}  This project finds events from news articles, categorize them and gathers all articles talking about same event to a set. Each set of articles is referred as Event Entity. Information extraction process is applied to extract more information related to it. The code can process large scale data. The code will be made public later. \\[0.1cm] 
         \href{https://goo.gl/ovcWVT}{QuakeAnalysis} -\href{https://goo.gl/ovcWVT}{\textit{https://goo.gl/ovcWVT}} & \hspace{0.5cm}  This project is based on the seismic activity across world which widely varies in characteristic and patterns. We have found some distinguish patterns among the seismic activities and present them in an insightful manner. Check \href{https://goo.gl/ovcWVT}{demo} and wiki of \href{https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Exploration}{Exploration} \& \href{https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Analysis}{Analysis}\\[0.2cm]
         \href{https://musicatlas.github.io/}{MusicAtlas} -\href{https://goo.gl/UH54UP}{\textit{https://goo.gl/UH54UP}} & \hspace{0.5cm}  This website is designed for music lovers to learn about music based on countries. This is a unique tool to explore and analyze the trend of music based on time frame, genre and artists. Almost all data from 19th century to till date. Please make sure you allow SSL connection from api server via this \href{https://db03.cs.utah.edu:8181/api/country_track}{link} before accessing \href{https://musicatlas.github.io/musicatlas/}{@musicatlas}.\\[0.1cm]
         \href{https://github.com/debjyoti385/QuestionAnswerNLP}{QuestionAnswering} -\href{https://goo.gl/QGfW2y}{\textit{https://goo.gl/QGfW2y}} & \hspace{0.5cm}  Closed domain Question Answer System. The system has \emph{Recall} of  63\% and \emph{F-score} of 43\%.   \\[0.1cm]
-        \href{http://debjyoti385.github.io/AirQuality/}{AirQuality} -\href{https://goo.gl/F8twhn}{\textit{https://goo.gl/F8twhn}}  & \hspace{0.5cm}  Goldman Sachs Hackathon - This analyze the air quality of Utah state from real world dataset. Data warehousing and cubing to enable interactive visualization framework, which helped in determining pattern of Pollution and its reason. \\
-        RCachedTree -\href{https://doi.org/10.1145/2505515.2507817}{\textit{10.1145/2505515.2507817}} & \hspace{0.5cm}  The objective is to speed up performance of point, range and kNN search queries for frequent or popular queries in databases. We came up with a variant of the R-Tree indexing structure with some features like caching at each node for popular queries.\\ 
+%        \href{http://debjyoti385.github.io/AirQuality/}{AirQuality} -\href{https://goo.gl/F8twhn}{\textit{https://goo.gl/F8twhn}}  & \hspace{0.5cm}  Goldman Sachs Hackathon - This analyze the air quality of Utah state from real world dataset. Data warehousing and cubing to enable interactive visualization framework, which helped in determining pattern of Pollution and its reason. \\
+%        RCachedTree -\href{https://doi.org/10.1145/2505515.2507817}{\textit{10.1145/2505515.2507817}} & \hspace{0.5cm}  The objective is to speed up performance of point, range and kNN search queries for frequent or popular queries in databases. We came up with a variant of the R-Tree indexing structure with some features like caching at each node for popular queries.\\ 
         \href{https://goo.gl/wMOl4C}{Dartnews} -\href{https://goo.gl/wMOl4C}{\textit{https://goo.gl/wMOl4C}}  & \hspace{0.5cm} A street news browsing application, with an interactive GIS interface. News is organized by locality and topic. The user can explore based on topics (eg crime, politics etc) and geolocation. We used Context Dependent Geoparsing, where we attempt to find out which location is relevant to the News. Across all the topics, we saw at least 87\% accuracy of topic prediction, and at least 80\% accuracy of location prediction.\\
         \href{http://github.com/debjyoti385/intelliad}{Intelliad} -\href{https://goo.gl/UAnEdz}{\textit{https://goo.gl/UAnEdz}} & \hspace{0.5cm} A Social Media driven Intelligent Ad-Targeting framework using Geo-profiling. The idea is to tag all geo-location enabled tweets(available publicly) with semantic categories (say sports, politics etc.) and their sentiment (positive, neutral, negative) using text mining. To enable serving of Ads, they also need to be tagged using same categories based on their content. \\
 %       \href{http://metonym.in}{Metonym (metonym.in)} & \hspace{1cm}  A synonym based vocabulary learner website built with d3.js, php and dropwizard framework at the backend. For demo use username: "demo" \& password: "12345678"  \\        
 %Elliptic Curve Diffie-Hellman Key Agreement Protocol    & We here proposed an efficient Elliptic curve Diffie-Hellman two-party key agreement protocol using public key authentication based on Elliptic Curve Group. We presented an improved version of that protocol which uses Converse of Fermat’s theorem with eliminated charmichael numbers. Also efficiently generating primitive roots for D-H key.\\
 %Real time discrimination of Speech and Music & Real-time speaker segmentation is required in many applications, such as speaker tracking in real- time news-video segmentation and classification, or real-time speaker adapted speech. After feature extraction, using Low Short Term Energy Ratio (LSTER) the input digital audio stream is classified into speech and music. Here we have used DSK6713 Digital Signal Processing Kit.\\
-
 \end{tabular}
+\textit{Find more projects at \href{https://www.cs.utah.edu/~deb/\#projects}{https://www.cs.utah.edu/\textasciitilde deb/\#project}}
 
-\section{Hackathons}
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength-190pt}p{\rcollength+180pt}}
+\section{Hackathon Trophies}
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-150pt}p{\rcollength+190pt}}
         \textbf{[2016]} EMC2 Code & \href{https://github.com/codedellemc/mars-challenge}{Mars Challenge} Hackathon Winner (around 45 teams) \\[5pt]
         \textbf{[2015]} Goldman Sachs & Air Quality Hackathon 1st Runners-up  (around 30 teams)\\[5pt]
         \textbf{[2014]} \href{http://www.inmobi.com/}{InMobi} & Freedom Hack Worldwide Hackathon 1st Runners-up (around 160 teams)   \\[5pt]
@@ -379,13 +396,12 @@ M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanj
 %                     & \href{https://github.com/azkaban/azkaban}{Azkaban2} \& Oozie exec engine\\[5pt]
 \end{tabular}
 
-\section{Skills}
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength-190pt}p{\rcollength+180pt}}
-    \textbf{Programming}  & Python, Java, C, C++, Javascipt, \href{http://d3js.org/}{D3.js}, \href{http://threejs.org/}{Three.js}\\[5pt]
-\textbf{Databases} \textit{etc.} & MySQL, \href{http://www.vertica.com/about/}{HP Vertica}, HiveQL, VSQL, Apache Pig, HBase, MR2, Apache Storm\\[5pt]
-        \textbf{Tidbits} & \LaTeX{}, Shell script, gdb, CSS3, HTML5,  Maven, Vim, Azkaban2 \textit{etc.} \\ 
-\end{tabular}
-
+%\section{Skills}
+%\begin{tabular}[t]{@{}p{\textwidth-\rcollength-190pt}p{\rcollength+210pt}}
+%    \textbf{Programming}  & Python, Java, C, C++, Javascipt, \href{http://d3js.org/}{D3.js}, \href{http://threejs.org/}{Three.js}\\[5pt]
+%\textbf{Databases} \textit{etc.} & MySQL, \href{http://www.vertica.com/about/}{HP Vertica}, HiveQL, VSQL, Apache Pig, HBase, MR2, Apache Storm\\[5pt]
+%        \textbf{Tidbits} & \LaTeX{}, Shell script, gdb, CSS3, HTML5,  Maven, Vim, Azkaban2 \textit{etc.} \\ 
+%\end{tabular}
 
 
 
@@ -396,6 +412,7 @@ M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanj
 \item[\textbf{[2011]}]  Achieved All India Rank of 7 in Indian Space Research Organization (ISRO) recruitment exam for Junior Research Fellow among 0.2 million candidates.
 %\item[\textbf{[2010]}] 2nd Rank in Manual Robo-race competition \& 2nd Rank in Robo-Olympic an innovative track based racing competition in Bits to Bytes Tech-fest, Bengal Institute of Technology. 
 \end{innerlist}
+
 
 
 %\section{Relevant Courses}
@@ -429,15 +446,13 @@ M.Tech Thesis, Advisor: \href{http://www.cse.iitk.ac.in/users/ska}{Late Dr. Sanj
 %\item[\textbf{[2009]}]Event coordinator and Website developer for Festronix Techfest at Institute of Engineering and Management
 %\end{innerlist}
 %
-   
-    
-\begin{comment}
 
 \section{References}
 %
-Available upon request
+\textit{For skillsets please visit homepage \href{https://www.cs.utah.edu/~deb/\#skills}{https://www.cs.utah.edu/\textasciitilde deb/\#skills}.\\
+All references are provided upon requests.}
 
-\end{comment}
+
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
