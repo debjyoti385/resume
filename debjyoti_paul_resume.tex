@@ -22,6 +22,7 @@
 
 % This is a helpful package that puts math inside length specifications
 \usepackage{calc}
+\usepackage{array}
 \usepackage{comment}
 \usepackage[none]{hyphenat}
 % Simpler bibsection for CV sections
@@ -220,10 +221,10 @@
 
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength }p{\rcollength}}
 130 S 800 E APT 101  & \faHome ~ \href{http://www.cs.utah.edu/~deb}{\url{http://www.cs.utah.edu/\~deb}}  \\
- Salt Lake City   & \faEnvelope ~ \href{mailto:deb@cs.utah.edu}{deb@cs.utah.edu}\\
- Pin: 84102  &  \faLinkedin ~ \href{https://www.linkedin.com/in/debjyotipaul385/}{https://www.linkedin.com/in/debjyotipaul385/} \\ 
+        Salt Lake City   & \faEnvelope ~ \href{mailto:deb@cs.utah.edu}{\url{deb@cs.utah.edu}}\\
+        Pin: 84102  &  \faLinkedin ~ \href{https://www.linkedin.com/in/debjyotipaul385/}{\url{/in/debjyotipaul385/}} \\ 
         University of Utah & \faGithub ~ \href{https://github.com/debjyoti385}{\url{http://github.com/debjyoti385}} \\ 
-        USA     &  \faPhone ~ +1 385 313-7219 \\
+        USA     &  \faPhone ~ \texttt{+1 385 313-7219} \\
 \end{tabular}
 
 
@@ -234,14 +235,14 @@ Large Scale Social Media Data Analytics, Machine Learning and Data Mining techni
 
 \section{ Education}
 %
-\href{http://www.cs.utah.edu/}{\textbf{University of Utah, School of Computing}},
+[2015-2019] \href{http://www.cs.utah.edu/}{\textbf{University of Utah, School of Computing}},
 Salt Lake City, UT, USA
 \vspace{-2mm}
 \begin{outerlist}
 \item[] PhD. Student,
         \href{http://cs.utah.edu/}
              {Computer Science \& Engineering},
-        Fall 2015- \textit{Current}
+%        Fall 2015- \textit{Current}
         \begin{innerlist}
 %        \item[] Thesis Title: \emph{Multi-constraint Job scheduling problem in Grid}
         \item[] Research Advisor:
@@ -254,14 +255,13 @@ Salt Lake City, UT, USA
 \end{outerlist} 
 \vspace{-3mm}
 
-\href{http://www.iitk.ac.in/}{\textbf{Indian Institute of Technology Kanpur}},
+[2011-2013] \href{http://www.iitk.ac.in/}{\textbf{Indian Institute of Technology Kanpur}},
 Kanpur, UP, INDIA
 \begin{outerlist}
 \vspace{-2mm}
 \item[] M.Tech.,
         \href{http://cse.iitk.ac.in/}
-             {Computer Science \& Engineering},
-             2011-2013
+             {Computer Science \& Engineering}
         \begin{innerlist}
         \item[] Thesis Title: \emph{Multi-constraint Job scheduling problem in Grid}
         \item[] Research Advisor:
@@ -273,7 +273,7 @@ Kanpur, UP, INDIA
         \end{innerlist}
 \end{outerlist} 
 
-\href{http://www.wbut.ac.in/}{\textbf{West Bengal University of Technology}},
+[2007-2011] \href{http://www.wbut.ac.in/}{\textbf{West Bengal University of Technology}},
 Salt Lake, Kolkata, WB, INDIA
 \begin{outerlist}
 \item[] B.Tech.,
@@ -365,7 +365,7 @@ Salt Lake, Kolkata, WB, INDIA
 
 \vspace{2mm}
 \section{Projects \href{https://www.cs.utah.edu/~deb/\#projects}{(More.. )}}
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength-150pt}p{\rcollength+150pt}}
+\begin{tabular}[t]{@{}>{\raggedright\arraybackslash}p{\textwidth-\rcollength-150pt}p{\rcollength+150pt}}
         \href{http://estorm.org}{Compass } -\href{http://estorm.org}{\textit{http://estorm.org}} & \hspace{0.5cm} This project explores how Twitter can be used to analyze the popularity of Political Parties for the Presidential Election 2016. It is purely based on the data collected from Twitter.  Read our Compass paper for details.\\[0.1cm] 
          Event Aggregator & \hspace{0.5cm}  This project finds events from news articles, categorize them and gathers all articles talking about same event to a set. Each set of articles is referred as Event Entity. Information extraction process is applied to extract more information related to it. The code can process large scale data. The code will be made public later. \\[0.1cm] 
         \href{https://goo.gl/ovcWVT}{QuakeAnalysis} -\href{https://goo.gl/ovcWVT}{\textit{https://goo.gl/ovcWVT}} & \hspace{0.5cm}  This project is based on the seismic activity across world which widely varies in characteristic and patterns. We have found some distinguish patterns among the seismic activities and present them in an insightful manner. Check \href{https://goo.gl/ovcWVT}{demo} and wiki of \href{https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Exploration}{Exploration} \& \href{https://bitbucket.org/debjyotipaul385/quakeanalysis/wiki/Analysis}{Analysis}\\[0.2cm]
