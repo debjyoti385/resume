@@ -1,0 +1,3 @@
+lualatex debjyoti_paul_resume.tex
+lualatex debjyoti_paul_cv.tex
+lualatex debjyoti_paul_resume.tex
